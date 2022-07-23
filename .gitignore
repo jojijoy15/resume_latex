@@ -1,0 +1,11 @@
+
+# images 
+*.jpg
+*.jpeg
+*.png
+
+# other files
+*.out
+*.log
+*.aux
+*.pdf

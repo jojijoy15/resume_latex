@@ -1,0 +1,244 @@
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{}{Joji Joy}{ 
+    \urlstyle{same}\href{email:email}{email} | +91 111-111-1111 | \href{https://www.linkedin.com/in/abc}{abc@linkedin}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming Languages}
+\hspace{5pt} \textbullet{} Java \textbullet{} Javascript \textbullet{} C/C++ \\
+\hspace*{5pt} \textbullet{} Python 
+\subsectionsep
+\subsection{Databases}
+\subsubsection{RDBMS}
+\hspace{5pt} \textbullet{} PostGre \textbullet{} MySQL \textbullet{} Oracle
+\subsubsection{NoSQL}
+\hspace{5pt} \textbullet{} Mongodb \textbullet{} DynamoDB
+\subsubsection{In Memory}
+\hspace{5pt} \textbullet{} Redis
+\subsectionsep
+\subsection{Frameworks}
+\subsubsection{Java}
+\hspace{5pt} \textbullet{} Spring MVC \textbullet{} Spring Boot \\
+\hspace*{5pt} \textbullet{} Hibernate \textbullet{} Junit \textbullet{} Mockito
+
+\subsubsection{Nodejs}
+\hspace{5pt} \textbullet{} Express
+\subsectionsep
+\subsection{Architectural Style}
+\hspace{5pt} \textbullet{} Rest \textbullet{} Microservices
+\subsectionsep
+\subsection{Development Style}
+\hspace{5pt} \textbullet{} Agile
+\subsectionsep
+\subsection{Cloud}
+\subsubsection{AWS}
+\hspace{5pt} \textbullet{} SQS \textbullet{} SNS \textbullet{} Lambda \textbullet{} EC2
+\subsubsection{Elastic}
+\hspace{5pt} \textbullet{} Kibana
+\subsectionsep
+\subsection{Docker}
+\hspace{5pt} \textbullet{} Familiar with the concept
+\subsectionsep
+\subsection{Version Control}
+\hspace{5pt} \textbullet{} Git
+\subsectionsep
+\subsection{Linux}
+\hspace{5pt} \textbullet{} Shell Scripting\\\ 
+\hspace*{5pt} \textbullet{} System \& Socket programming
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{BITS Edu Campus}
+\descript{BE in ECE}
+\location{May 2016 | Vadodara, GJ}
+CGPA: 7.84
+\sectionsep
+
+\subsection{GREMS}
+\descript{HSC}
+\location{March 2012 | Vadodara, GJ}
+Percentage: 67.23%
+\sectionsep
+
+\descript{SSC}
+\location{March 2010| Vadodara, GJ}
+Percentage: 83.38%
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{ICE Mortgage Technology}
+\descript{| Software Engineer Level I}
+\location{Mar 2022 - July 2022| Pune, MH}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Coordinating with Architect for maintenance of API Gateway.
+\item Worked on Nodejs and Express.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Bajaj Finserv}
+\descript{| Junior Software Developer}
+\location{March 2021 – March 2022 | Pune, MH}
+\begin{tightemize}
+\item Managed and revamped Authentication Service.
+\item Developed REST endpoints with optimized response time for \\Spring Boot applications. 
+\item Implemented Rewards Framework backend using event-driven, loosely-coupled architecture.
+\item Co-ordinated with payment partners to integrate P2P services.
+\item Writing quality code as per TDD style.
+\item Managed core services.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Matrix Comsec}
+\descript{| Associate Software Developer}
+\location{Dec 2018 – Sept 2019 | Vadodara, GJ}
+\begin{tightemize}
+\item C/C++ developer in Telecom department. 
+\item Managing Call Manager service
+\item Implementing features as per SRS for communication server.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+\runsubsection{CDAC ACTS}
+\descript{| Pune}
+\location{Jan 2020 – Feb 2021 | Pune, MH}
+\begin{tightemize}
+\item Diploma in Advance Computing.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Vector India}
+\descript{| Bengaluru}
+\location{Mar 2018 – Oct 2018 | Bengaluru, KA}
+\begin{tightemize}
+\item Embedded Systems training.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+\runsubsection{CDAC Project Management System}
+\descript{| ACTS}
+\location{Dec 2020 – Jan 2021}
+\begin{tightemize}
+\item This project was built with an aim to track lifecycle, \\
+manage and assess accountability of work done by each team \\ and its members. 
+\item Enabled administrator/s to check progress of all the projects. 
+\item Tracks assistance provided by project guides and mentors.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{PC based Data Acquisition System}
+\descript{| Vector India}
+\location{Aug 2018 – Sept 2018}
+\begin{tightemize}
+\item An 8051 based data acquisition system using I2C protocol \\
+to collect data from DS1621 temperature sensor and RTC.
+\item The acquired data was then stored in AT24C08 EEPROM.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{SBC based PID controller}
+\descript{| BITS edu campus}
+\location{July 2015 – Mar 2016}
+\begin{tightemize}
+\item This project was an attempt to make all in one control system \\
+for industrial plant using Beaglebone Black SBC. 
+\item We added feature such as GUI, data logging facility so that \\analytics can be done effectively.
+\item This analytics helped in understanding system behaviour.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Page 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\simpleheader
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extra details
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Extracurriculars}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Organized various technical \& non-technical events for sophomores as IETE student forum’s technical head. 
+\item Lead coordinator in OSTC club 
+\item Volunteer and participant in Aahvan Techfest organized under GTU during undergraduation. 
+\item Secured 1\textsuperscript{st} prize in Techfest st event, RoboFIFA.
+\end{tightemize}
+\sectionsep
+
+\section{Soft Skills}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Effective interpersonal skills. 
+\item Versatile and quick learner.
+\end{tightemize}
+\sectionsep
+
+\section{Personal Details}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Age: 28 years. 
+\item Languages : English, Hindi, Malayalam(MT), Gujarati.
+\end{tightemize}
+\sectionsep
+
+\rule{\linewidth}{0.5pt}
+\datetag{Date}
+
+\end{document}  \documentclass[]{article}
