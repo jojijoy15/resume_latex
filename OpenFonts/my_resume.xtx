@@ -12,7 +12,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \namesection{}{Joji Joy}{ 
-    \urlstyle{same}\href{email:email}{email} | +91 111-111-1111 | \href{linkedinlink/in/abc}{abc@linkedin}
+    \urlstyle{same}\href{tomail:jojijoy1512@gmai.com}{jojijoy1512@gmail.com} | +91 8460247020 | \href{https://www.linkedin.com/in/joji-joy-2ab431171/}{joji@linkedin}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -29,8 +29,8 @@
 
 \section{Skills}
 \subsection{Programming Languages}
-\hspace{5pt} \textbullet{} Java \textbullet{} Javascript \textbullet{} C/C++ \\
-\hspace*{5pt} \textbullet{} Python 
+\hspace{5pt} \textbullet{} Java (proficient) \textbullet{} Javascript  \\
+\hspace*{5pt} \textbullet{} C/C++ \textbullet{} Python 
 \subsectionsep
 \subsection{Databases}
 \subsubsection{RDBMS}
@@ -42,17 +42,11 @@
 \subsectionsep
 \subsection{Frameworks}
 \subsubsection{Java}
-\hspace{5pt} \textbullet{} Spring MVC \textbullet{} Spring Boot \\
-\hspace*{5pt} \textbullet{} Hibernate \textbullet{} Junit \textbullet{} Mockito
+\hspace{5pt} \textbullet{} Spring MVC and SpringBoot \\
+\hspace*{5pt} \textbullet{} Hibernate \textbullet{} Junit \textbullet{} Executor 
 
 \subsubsection{Nodejs}
 \hspace{5pt} \textbullet{} Express
-\subsectionsep
-\subsection{Architectural Style}
-\hspace{5pt} \textbullet{} Rest \textbullet{} Microservices
-\subsectionsep
-\subsection{Development Style}
-\hspace{5pt} \textbullet{} Agile
 \subsectionsep
 \subsection{Cloud}
 \subsubsection{AWS}
@@ -60,15 +54,19 @@
 \subsubsection{Elastic}
 \hspace{5pt} \textbullet{} Kibana
 \subsectionsep
+\subsection{Linux}
+\hspace{5pt} \textbullet{} Shell Scripting\\\ 
+\hspace*{5pt} \textbullet{} System \& Socket programming
+\subsectionsep
 \subsection{Docker}
+\hspace{5pt} \textbullet{} Familiar with the concept
+\subsectionsep
+\subsection{Terraform}
 \hspace{5pt} \textbullet{} Familiar with the concept
 \subsectionsep
 \subsection{Version Control}
 \hspace{5pt} \textbullet{} Git
 \subsectionsep
-\subsection{Linux}
-\hspace{5pt} \textbullet{} Shell Scripting\\\ 
-\hspace*{5pt} \textbullet{} System \& Socket programming
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,18 +76,18 @@
 \section{Education} 
 
 \subsection{BITS Edu Campus}
-\descript{BE in ECE}
+\descriptedu{BE in ECE}
 \location{May 2016 | Vadodara, GJ}
 CGPA: 7.84
 \sectionsep
 
 \subsection{GREMS}
-\descript{HSC}
+\descriptedu{HSC}
 \location{March 2012 | Vadodara, GJ}
 Percentage: 67.23%
 \sectionsep
 
-\descript{SSC}
+\descriptedu{SSC}
 \location{March 2010| Vadodara, GJ}
 Percentage: 83.38%
 \sectionsep
@@ -114,8 +112,8 @@ Percentage: 83.38%
 \location{Mar 2022 - July 2022| Pune, MH}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Coordinating with Architect for maintenance of API Gateway.
-\item Worked on Nodejs and Express.
+\item Coordinated with architect for API Gateway maintenance.
+\item Worked on Nodejs application built on Express framework.
 \end{tightemize}
 \sectionsep
 
@@ -123,12 +121,11 @@ Percentage: 83.38%
 \descript{| Junior Software Developer}
 \location{March 2021 – March 2022 | Pune, MH}
 \begin{tightemize}
-\item Managed and revamped Authentication Service.
-\item Developed REST endpoints with optimized response time for \\Spring Boot applications. 
-\item Implemented Rewards Framework backend using event-driven, loosely-coupled architecture.
-\item Co-ordinated with payment partners to integrate P2P services.
-\item Writing quality code as per TDD style.
-\item Managed core services.
+\item Managed and improved Authentication Service.
+\item Implemented from the ground up Rewards framework backend \\using event-driven, loosely-coupled architecture.
+\item Coordinated with payment partners to integrate P2P services.
+\item Managed platform's core backend microservices.
+\item Developed REST endpoints with optimized response time for \\Springboot applications. 
 \end{tightemize}
 \sectionsep
 
@@ -137,8 +134,7 @@ Percentage: 83.38%
 \location{Dec 2018 – Sept 2019 | Vadodara, GJ}
 \begin{tightemize}
 \item C/C++ developer in Telecom department. 
-\item Managing Call Manager service
-\item Implementing features as per SRS for communication server.
+\item Implementing features as per SRS, maintaining Call Manager Service.
 \end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,10 +166,10 @@ Percentage: 83.38%
 \descript{| ACTS}
 \location{Dec 2020 – Jan 2021}
 \begin{tightemize}
-\item This project was built with an aim to track lifecycle, \\
-manage and assess accountability of work done by each team \\ and its members. 
+\item A SpringBoot and Angular project built with an aim to manage CDAC \\
+students project. 
 \item Enabled administrator/s to check progress of all the projects. 
-\item Tracks assistance provided by project guides and mentors.
+\item Track assistance provided by project guides and mentors.
 \end{tightemize}
 \sectionsep
 
@@ -181,9 +177,8 @@ manage and assess accountability of work done by each team \\ and its members.
 \descript{| Vector India}
 \location{Aug 2018 – Sept 2018}
 \begin{tightemize}
-\item An 8051 based data acquisition system using I2C protocol \\
-to collect data from DS1621 temperature sensor and RTC.
-\item The acquired data was then stored in AT24C08 EEPROM.
+\item An 8051 based data acquisition system using I2C protocol, \\
+to collect data from DS1621 temperature sensor, RTC and store \\the collected data into AT24C08 EEPROM.
 \end{tightemize}
 \sectionsep
 
@@ -193,7 +188,7 @@ to collect data from DS1621 temperature sensor and RTC.
 \begin{tightemize}
 \item This project was an attempt to make all in one control system \\
 for industrial plant using Beaglebone Black SBC. 
-\item We added feature such as GUI, data logging facility so that \\analytics can be done effectively.
+\item Added features such as GUI, data logging so that \\analytics can be done effectively.
 \item This analytics helped in understanding system behaviour.
 \end{tightemize}
 \sectionsep
@@ -215,12 +210,10 @@ for industrial plant using Beaglebone Black SBC.
 \section{Extracurriculars}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Organized various technical \& non-technical events for sophomores as IETE student forum’s technical head. 
+\item Managed various technical \& non-technical events for sophomores as IETE student forum’s technical head. 
 \item Lead coordinator in OSTC club 
-\item Volunteer and participant in Aahvan Techfest organized under GTU during undergraduation. 
-\item Secured 1\textsuperscript{st} prize in Techfest st event, RoboFIFA.
+\item Volunteered in Aahvan Techfest organized under GTU during undergraduation.
 \end{tightemize}
-\sectionsep
 
 \section{Soft Skills}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
@@ -228,7 +221,6 @@ for industrial plant using Beaglebone Black SBC.
 \item Effective interpersonal skills. 
 \item Versatile and quick learner.
 \end{tightemize}
-\sectionsep
 
 \section{Personal Details}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space

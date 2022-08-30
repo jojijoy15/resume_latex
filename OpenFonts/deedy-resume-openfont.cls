@@ -41,20 +41,20 @@ Last Updated on \today
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
-\fontsize{20pt}{60pt}
+\fontsize{15pt}{60pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/poppins/]{Poppins-ExtraBold}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont #3}
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}}
 \vspace{-15pt}
 }
 
 % Name command
 \newcommand{\simpleheader}{
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\linewidth}{0.4pt}}
 \vspace{-15pt}
 }
 
@@ -83,11 +83,14 @@ Last Updated on \today
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
+
+\newcommand{\descriptedu}[1]{
+\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Bold}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
