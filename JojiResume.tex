@@ -1,0 +1,271 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%
+% package imports %
+%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage[hmargin=1.5cm, vmargin=0.75cm, includefoot]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[usenames,dvipsnames]{xcolor} 
+\usepackage{fontspec}
+\usepackage[absolute]{textpos}
+\usepackage[UKenglish]{isodate}
+\usepackage{titlesec}
+\usepackage{twemojis}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+%%%%%%%%%%%%%%%%%%%%%
+% Color Definitions %
+%%%%%%%%%%%%%%%%%%%%%
+\definecolor{date}{HTML}{666666} 
+\definecolor{primary}{HTML}{2b2b2b}
+\definecolor{nameheading}{HTML}{000000}
+\definecolor{headings}{HTML}{000000}
+\definecolor{subheadings}{HTML}{333333}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% Font Specifications %
+%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Reg}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-Medium}
+\NeedsTeXFormat{LaTeX2e}
+
+
+%%%%%%%%%%%%%%%%%
+% Date Commands %
+%%%%%%%%%%%%%%%%%
+\newcommand{\lastupdated}{
+	\begin{textblock}{60}(155,5)
+	\color{date}
+	\fontspec[Path = fonts/raleway/]{Raleway-Regular}
+	\fontsize{8pt}{10pt}
+	\selectfont Last Updated on \today
+	\end{textblock}
+}
+
+%%%%%%%%%%%%%%%%%
+% Name Commands %
+%%%%%%%%%%%%%%%%%
+\newcommand{\namesection}[3]{
+	\centering{
+		\color{nameheading}
+		\fontsize{18pt}{60pt}
+		\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
+		\fontspec[Path = fonts/poppins/]{Poppins-ExtraBold}
+		\selectfont #2
+	} \\[5pt]
+	\centering{
+		\color{headings}
+		\fontspec[Path = fonts/raleway/]{Raleway-Medium}
+		\fontsize{12pt}{14pt}\selectfont #3
+	}
+	\noindent\makebox[\linewidth]{
+		\color{headings}
+		\rule{1.0\linewidth}{1.0pt}
+	}
+	\vspace{-10pt}
+}
+
+\newcommand{\simpleheader}{
+ 	\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
+	\vspace{-15pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section separator Commands %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlespacing{\section}{0pt}{0pt}{0pt} 
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{5pt}{0pt}{0pt}
+\newcommand{\sectionsep}{\vspace{7pt}}
+\newcommand{\subsectionsep}{\vspace{5pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Commands %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Headings command
+\titleformat{\section}{
+	\color{headings}
+	\scshape\fontspec[Path = fonts/poppins/]{Poppins-Black}\fontsize{15pt}{20pt}\selectfont \raggedright\uppercase
+}{}{0em}{}
+
+% Subheadings command
+\titleformat{\subsection}{
+	\color{subheadings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{12pt}{14pt}\selectfont\bfseries\uppercase
+}{}{0em}{}
+
+\newcommand{\category}[1]{
+	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont
+}
+
+% SubSubheadings command
+\titleformat{\subsubsection}{
+	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{14pt}\selectfont\bfseries\uppercase
+}{}{0em}{}
+
+% runsubsection command
+\newcommand{\runsubsection}[1]{
+	\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{11pt}{14pt}\selectfont\bfseries\uppercase {#1} \normalfont
+}
+
+% Descriptors command
+\newcommand{\descript}[1]{
+	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{12pt}{14pt}\selectfont {#1 \\} \normalfont
+}
+\newcommand{\descriptList}[1]{
+	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{11pt}{14pt}\selectfont {#1 \\} \normalfont
+}
+
+% Location command
+\newcommand{\location}[1]{
+	\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont
+}
+
+% Bullet Lists with fewer gaps command
+\newenvironment{tightemize}{
+	\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+{\end{itemize}\vspace{-\topsep}
+}
+
+\newcommand{\datetag}[1]{
+	\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1: \today \\} \normalfont
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header and Footer Settings %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\today}
+
+\renewcommand{\footrulewidth}{1.0pt}% default is 0pt
+
+\begin{document}
+%%%%%%%%%%%%%%%
+%Title Section%
+%%%%%%%%%%%%%%%
+
+\namesection{}{Joji Joy}{ 
+    \urlstyle{same}
+    \href{email:email}{\twemoji[scale=0.4]{e-mail} jojijoy1512@gmail.com} |
+     \twemoji[scale=0.36]{mobile phone} +91 8460247020 |
+     \href{https://www.linkedin.com/in/joji-joy-jmj}{\faIcon{linkedin}  joji@linkedin} |
+     \href{https://github.com/jojijoy15}{\faIcon{github}  joji@gihub}
+}
+
+%%%%%%%%%%%%%%%%%%%%
+%Experience Section%
+%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Western Union}
+\descript{| Junior Associate, Solution Engineering}
+\location{September 2022 - October 2022 | Pune, MH}
+\begin{tightemize}
+\item Contributed as a fullstack developer in compliance vertical application transformation team for Pharos, which is a compliance case management system developed using microservices architecture.
+\item Experienced on event driven architecture and microservices patterns like Strangler, Listen to Yourself, Circuit Breaker.
+\item Implemented design patterns to make reusable components and libraries for SpringBoot applications.
+\item Designed and implemented solutions for business requirements as per  Agile practices in an enterprise setup.
+\item Implemented Camunda 7 BPMN flow for case life cycle management as per business requirements.
+\item Developed prototype application as part of exploring new Camunda 8  BPMN feature exploration.
+\item Implemented UI features for Pharos application using Angular 17, Angular Material, NgRx and RxJs.
+\item Reduced verification time by implementing Liquibase as change tracking tool for database schema changes.
+\item Migrated Spring Boot from 2.x to 3.x for Spring Boot Applications.
+\item Received recognition from Engineering Manager for consistent contribution and improvements delivered for Pharos application.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{ICE Mortgage Technology}
+\descript{| SE 1, Platform Shared Services}
+\location{March 2022 - July 2022 | Pune, MH}
+\begin{tightemize}
+\item As a backend developer, worked on Nodejs and Express based API gateway application.
+\item Coordinated with architect for maintenance and improvement of API Gateway.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Bajaj Finserv}
+\descript{| Junior Software Developer, Platform Team}
+\location{March 2021 – March 2022 | Pune, MH}
+\begin{tightemize}
+\item As a backend developer, implemented Rewards Framework from the ground up in microservices, event-driven architecture.
+\item Developed highly performant REST APIs for Spring Boot applications written in Java 11. 
+\item Worked on implementing choreography based SAGA microservice pattern to maintain database consistency across services, domain events were published  using AWS SNS and SQS.
+\item Managed and revamped core Authentication service (Java 8) to improve performance of service by 30\%, by identifying better database indexes and code refactoring.
+\item Coordinated with payment partners to integrate P2P service APIs.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Matrix Comsec}
+\descript{| Associate Software Developer, Telecom department}
+\location{Dec 2018 – Sept 2019 | Vadodara, GJ}
+\begin{tightemize}
+\item As a C/C++ developer, worked on communication server backend.
+\item Worked on Call Manager service and implemented features as per SRS for communication server.
+\item Diagnosed and fixed bugs in the existing communication server backend.
+\end{tightemize}
+
+\section{Technical Skills}
+\begin{tightemize}\vspace{7pt}
+	\item\category{Languages:}
+		\descriptList{Java 8/11/17, Typescript, Javascript} 
+	\item\category{Build Tools:}
+		\descriptList{Maven, NPM}
+	\item\category{Framework:}
+		\descriptList{SpringBoot, Camunda, Spring Data JPA, Hibernate, Spring Cloud, Angular 14/17, ExpressJs, Junit, Mockito, Test Containers} 
+	\item\category{Databases:}
+		\descriptList{Couchbase, Postgres, MongoDB, Redis}
+	\item\category{Message Brokers:}
+		\descriptList{RabbitMQ, Kafka}
+	\item\category{AWS Cloud:}
+		\descriptList{ECS Fargate, EC2, Auto Scaling, API Gateway, Load Balancer, Lambda, VPC, Route53, Cloud Watch, SQS, SNS, ElastiCache, OpenSearch}
+	\item\category{Observability:}
+		\descriptList{Elastic stack (ELK), Dynatrace}
+	\item\category{CI/CD Tools:} Jenkins, Terraform, SonarQube, Liquibase
+	\item\category{Others:} Shell Scripting, Linux commands
+\end{tightemize}
+\sectionsep
+
+\pagebreak
+
+\noindent\makebox[\linewidth]{
+	\color{headings}
+	\rule{1.0\linewidth}{1.0pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%
+%Certification Section%
+%%%%%%%%%%%%%%%%%%%%
+
+\begin{multicols}{2}
+
+\section{Certifications}
+\subsection{AWS Developer Associate}
+\descript{DVA-CO2}
+\location{Dec 2024 – Present}
+Score: 900
+\columnbreak
+
+\section{ }
+\subsection{CDAC ACTS}
+\descript{PG Diploma in Advance Computing (PG-DAC)}
+\location{Jan 2020 – Feb 2021 | Pune, MH}
+Grade: A
+\columnbreak
+\end{multicols}
+
+\section{Education}
+\subsection{Babaria Institute Of Technology}
+\descript{Bachelor of Engineering in Electronics \& Communication}
+\location{May 2016 | Vadodara, GJ}
+CGPA: 7.84
+
+
+\end{document}

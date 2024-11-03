@@ -9,6 +9,8 @@
 *.log
 *.aux
 *.pdf
+*.gz
+*.bak
 
 # Mac
 .DS_Store
